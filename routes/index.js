@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET book list */
-router.get('/list', book.findDocs)
+router.get('/book/list', book.findDocs)
 
 /* POST add new Book */
-router.post('/add', book.insertDoc)
+router.post('/book/add', book.insertDoc)
 
 module.exports = router;
