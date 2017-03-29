@@ -8,8 +8,8 @@ var booksController = require('../controllers/booksController');
 //   res.send('respond with a resource');
 // });
 
-router.post('/addbook', booksController.addBook) //Add 1 New Book to Database
+router.post('/', booksController.addBook) //Add 1 New Book to Database
 
-router.get('/showbooks', booksController.getBooks) //Show All Books in Database
+router.get('/', booksController.getBooks) //Show All Books in Database
 
 module.exports = router;
